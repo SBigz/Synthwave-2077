@@ -14,7 +14,8 @@
       {
         "label": "Synthwave '2077",
         "uiTheme": "vs-dark",
-        "path": "./themes/Synthwave '2077-color-theme.json"
+        "path": "./themes/Synthwave '2077-color-theme.json",
+        "styles": "./styles/neon.css"
       }
     ]
   }
