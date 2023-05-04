@@ -37,4 +37,6 @@ I am not used to creating themes, and I have been using Synthwave '84 for a long
 - [Cyberpunk 2077](https://github.com/carlos18mz/Cyberpunk-2077-rebuild) VS Code Theme by [carlos18mz](https://github.com/carlos18mz)
 - ["Synthwave '84"](https://github.com/robb0wen/synthwave-vscode) VS Code Theme by [robbOwen](https://github.com/robb0wen)
 
-**Enjoy, give a ⭐️ if you like the theme, fork it, and check out my other extension for VS Code, [CommentsAI](https://github.com/SBigz/CommentsAI)**
+## Enjoy !
+
+Give a ⭐️ if you like the theme, fork it, and check out my other extension for VS Code, [CommentsAI](https://github.com/SBigz/CommentsAI) !
