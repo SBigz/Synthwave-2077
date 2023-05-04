@@ -1,5 +1,5 @@
 # Synthwave '2077 - VS Code Theme
-![Synthwave '2077 Banner](https://github.com/SBigz/Synthwave-2077/blob/main/77.png)
+![Synthwave '2077 Banner](./77.png)
 
 ## When Cyberpunk 2077 meets Synthwave '84
 
