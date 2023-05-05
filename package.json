@@ -9,18 +9,31 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/SBigz/Synthwave-2077"
-},
+  },
   "categories": [
     "Themes"
   ],
+  "main": "./extension.js",
   "contributes": {
     "themes": [
       {
         "label": "Synthwave '2077",
         "uiTheme": "vs-dark",
-        "path": "./themes/Synthwave '2077-color-theme.json",
-        "styles": "./styles/neon.css"
+        "path": "./themes/Synthwave '2077-color-theme.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "synthwave--2077.enable",
+        "title": "I'm watching you"
+      },
+      {
+        "command": "synthwave--2077.disable",
+        "title": "Sacha was here"
       }
     ]
+  },
+  "devDependencies": {
+    "vscode": "^1.1.37"
   }
 }

@@ -25,7 +25,6 @@
 - Once the installation is complete, click "Reload" to refresh your editor.
 - Go to "File" > "Preferences" > "Color Theme" and select "Synthwave '2077" to activate the theme.
 - It is necessary to install the [Custom CSS and JS Loader](https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-custom-css) extension for the theme to work correctly.
-
 - For the terminal, install [oh my zsh!](https://github.com/ohmyzsh/ohmyzsh) and pick the theme you want !
 
 ## Disclaimer 👀
