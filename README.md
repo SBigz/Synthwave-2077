@@ -1,6 +1,6 @@
 # Synthwave '2077 - VS Code Theme
 
-![Synthwave '2077 Banner](https://github.com/SBigz/Synthwave-2077/blob/main/77.png)
+![Synthwave '2077 Banner](/77.png)
 
 ## When Cyberpunk 2077 meets Synthwave '84 🦾
 
@@ -10,13 +10,13 @@
 
 ## Take a look 🤖
 
-## ![Synthwave '2077 Preview 1](https://github.com/SBigz/Synthwave-2077/blob/main/preview1.png)
+## ![Synthwave '2077 Preview 1](/preview1.png)
 
-## ![Synthwave '2077 Preview 2](https://github.com/SBigz/Synthwave-2077/blob/main/preview2.png)
+## ![Synthwave '2077 Preview 2](/preview2.png)
 
-## ![Synthwave '2077 Preview 3](https://github.com/SBigz/Synthwave-2077/blob/main/preview3.png)
+## ![Synthwave '2077 Preview 3](/preview3.png)
 
-## ![Synthwave '2077 Preview 4](https://github.com/SBigz/Synthwave-2077/blob/main/preview4.png)
+## ![Synthwave '2077 Preview 4](/preview4.png)
 
 ## Installation 🔩
 
