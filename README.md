@@ -4,9 +4,14 @@
 
 ## When Cyberpunk 2077 meets Synthwave '84 🦾
 
-- "Cyberpunk 2077" is a role-playing game developed by CD Projekt Red, set in the futuristic, dystopian Night City. The game's theme revolves around a cyberpunk aesthetic, featuring advanced technology, neon lights, and a gritty urban environment.
-- ["Synthwave '84"](https://github.com/robb0wen/synthwave-vscode) is a famous and amazing Visual Studio Code theme, created by [robbOwen](https://github.com/robb0wen) and inspired by the synthwave music genre and the retro-futuristic art style of the 1980s.
-- This theme features bright neon colors, reminiscent of the '80s, and fits well with the [Cyberpunk 2077](https://github.com/carlos18mz/Cyberpunk-2077-rebuild) aesthetic VS Code theme created by [carlos18mz](https://github.com/carlos18mz).
+Get ready to dive into a futuristic, dystopian world with the "Synthwave '2077" VS Code theme, where Cyberpunk 2077 meets ["Synthwave '84"](https://github.com/robb0wen/synthwave-vscode). Cyberpunk 2077, a popular role-playing game developed by CD Projekt Red, inspires the theme's design with its advanced technology, neon lights, and gritty urban environment. Synthwave '84, a fantastic VS Code theme created by [robbOwen](https://github.com/robb0wen) sets the theme's mood with its retro-futuristic art style and synthwave music genre inspiration.
+
+## Key Features
+
+- Bright neon colors reminiscent of the '80s, fitting for the [Cyberpunk 2077](https://github.com/carlos18mz/Cyberpunk-2077-rebuild) aesthetic VS Code theme created by [carlos18mz](https://github.com/carlos18mz).
+- Sleek design and easy on the eyes, improving your coding experience
+- Compatible with most programming languages
+- Available for Windows, macOS, and Linux
 
 ## Take a look 🤖
 
@@ -20,15 +25,15 @@
 
 ## Installation 🔩
 
-- Search for "Synthwave '2077" in the Marketplace search bar.
-- Click "Install" to install the theme.
-- Once the installation is complete, click "Reload" to refresh your editor.
-- Go to "File" > "Preferences" > "Color Theme" and select "Synthwave '2077" to activate the theme.
-- For the terminal, install [oh my zsh!](https://github.com/ohmyzsh/ohmyzsh) and pick the theme you want !
+1. Open the Marketplace in Visual Studio Code and search for "Synthwave '2077."
+2. Click the "Install" button to add the theme to your VS Code.
+3. Once the installation is complete, click "Reload" to refresh your editor.
+4. To activate the theme, go to "File" > "Preferences" > "Color Theme," and select "Synthwave '2077."
+5. To customize your terminal theme, install [oh my zsh!](https://github.com/ohmyzsh/ohmyzsh) and choose your desired theme !
 
 ## Disclaimer 👀
 
-I am not used to creating themes, and I have been using Synthwave '84 for a long time. However, I recently fell in love with the style of Cyberpunk 2077 but felt that certain elements were missing in Synthwave '84. So, I tried to create a mix of the two according to my taste. It was not easy because Synthwave '84 works as an extension rather than a theme, as it relies on CSS and JS injection, unlike Cyberpunk 2077. Thus, it can sometimes be challenging to mix the two techniques. The theme is bound to be improved, so please do not hesitate to send any suggestions or screenshots if you have made improvements yourself.
+Although I am not a theme developer, I fell in love with Cyberpunk 2077's style and the Synthwave '84 theme. I created Synthwave '2077 by merging the two according to my preferences. The theme is not perfect, but it improves with feedback, so don't hesitate to share your suggestions and improvements.
 
 ## Credits ✨
 
@@ -37,4 +42,4 @@ I am not used to creating themes, and I have been using Synthwave '84 for a long
 
 ## Enjoy !
 
-Give a ⭐️ if you like the theme, fork it, and check out my other extension for VS Code, [CommentsAI](https://github.com/SBigz/CommentsAI) !
+If you enjoy the theme, please give it a ⭐️, and check out my other extension for VS Code, [CommentsAI](https://github.com/SBigz/CommentsAI) for automatic code commenting with advanced AI capabilities !
