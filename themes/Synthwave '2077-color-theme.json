@@ -659,7 +659,7 @@
 	  "inputValidation.errorBorder": "#00d482", //?
 	  "inputValidation.infoBackground": "#003622", //?
 	  "inputValidation.infoForeground": "#00d482", //?
-	  "inputValidation.infoBorder": "#00ff22", //?
+	  "inputValidation.infoBorder": "#00d4b1", //?
 	  "inputValidation.warningBackground": "#003622", //?
 	  "inputValidation.warningForeground": "#00d482", //?
 	  "inputValidation.warningBorder": "#00d482", //?
