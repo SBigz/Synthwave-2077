@@ -33,11 +33,11 @@
     "commands": [
       {
         "command": "synthwave--2077.enable",
-        "title": "I'm watching you"
+        "title": "Synthwave 2077: Enable Neon"
       },
       {
         "command": "synthwave--2077.disable",
-        "title": "Sacha was here"
+        "title": "Synthwave 2077: Disable Neon"
       }
     ]
   },
