@@ -29,7 +29,10 @@ Get ready to dive into a futuristic, dystopian world with the "Synthwave '2077" 
 2. Click the "Install" button to add the theme to your VS Code.
 3. Once the installation is complete, click "Reload" to refresh your editor.
 4. To activate the theme, go to "File" > "Preferences" > "Color Theme," and select "Synthwave '2077."
-5. To customize your terminal theme, install [oh my zsh!](https://github.com/ohmyzsh/ohmyzsh) and choose your desired theme !
+5. To enable the Neon of "Synthwave '2077," use the "Synthwave 2077: Enable Neon" command in the VS Code command palette `Ctrl+Shift+P` or `Cmd+Shift+P` on Mac.
+6. To disable the Neon, use the "Synthwave 2077: Disable Neon" command in the command palette.
+7. Each time you enable or disable the custom styles, VS Code will reload to apply the changes.
+8. To customize your terminal theme, install [oh my zsh!](https://github.com/ohmyzsh/ohmyzsh) and choose your desired theme !
 
 ## Disclaimer 👀
 

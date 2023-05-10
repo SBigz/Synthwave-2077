@@ -17,7 +17,7 @@
 		"name": "Variables",
 		"scope": ["variable", "string constant.other.placeholder"],
 		"settings": {
-		  "foreground": "#EEFFFF"
+		  "foreground": "#62d4b7"
 		}
 	  },
 	  {
@@ -38,7 +38,7 @@
 		"name": "Keyword, Storage",
 		"scope": ["keyword", "storage.type", "storage.modifier"],
 		"settings": {
-		  "foreground": "#d57bff"
+		  "foreground": "#ffe0e0"
 		}
 	  },
 	  {
@@ -58,7 +58,7 @@
 		  "keyword.other.substitution"
 		],
 		"settings": {
-		  "foreground": "#00b0ff"
+		  "foreground": "#EEFFFF"
 		}
 	  },
 	  {
@@ -69,7 +69,7 @@
 		  "markup.deleted.git_gutter"
 		],
 		"settings": {
-		  "foreground": "#ff5680"
+		  "foreground": "#ffe0e0"
 		}
 	  },
 	  {
@@ -82,14 +82,14 @@
 		  "keyword.other.special-method"
 		],
 		"settings": {
-		  "foreground": "#00b0ff"
+		  "foreground": "#EEFFFF"
 		}
 	  },
 	  {
 		"name": "Block Level Variables",
 		"scope": ["meta.block variable.other"],
 		"settings": {
-		  "foreground": "#b4baff"
+		  "foreground": "#a0fffc"
 		}
 	  },
 	  {
@@ -132,7 +132,7 @@
 		  "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
 		],
 		"settings": {
-		  "foreground": "#00FF9C"
+		  "foreground": "#fd7fd9"
 		}
 	  },
 	  {
