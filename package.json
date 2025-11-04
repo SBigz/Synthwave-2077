@@ -2,7 +2,8 @@
   "name": "synthwave--2077",
   "displayName": "Synthwave '2077",
   "description": "When Cyberpunk 2077 meets Synthwave '84",
-  "icon": "./icon.png",
+  "version": "0.7.0",
+  "icon": "icon.png",
   "publisher": "CodeSacha",
   "license": "SEE LICENSE IN LICENSE.txt",
   "homepage": "https://github.com/SBigz/Synthwave-2077/blob/main/README.md",
@@ -10,9 +11,8 @@
     "url": "https://github.com/SBigz/Synthwave-2077/issues",
     "email": "contact@codesacha.xyz"
   },
-  "version": "0.6.0",
   "engines": {
-    "vscode": "^1.77.0"
+    "vscode": "^1.85.0"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,22 @@
   "categories": [
     "Themes"
   ],
+  "keywords": [
+    "theme",
+    "dark theme",
+    "cyberpunk",
+    "synthwave",
+    "neon",
+    "cyberpunk 2077",
+    "synthwave 84",
+    "retro",
+    "futuristic",
+    "color-theme"
+  ],
+  "galleryBanner": {
+    "color": "#101116",
+    "theme": "dark"
+  },
   "main": "./extension.js",
   "contributes": {
     "themes": [
@@ -41,7 +57,12 @@
       }
     ]
   },
+  "scripts": {
+    "package": "vsce package",
+    "publish": "vsce publish"
+  },
   "devDependencies": {
-    "vscode": "^1.1.37"
+    "@types/vscode": "^1.85.0",
+    "@types/node": "^20.x"
   }
 }

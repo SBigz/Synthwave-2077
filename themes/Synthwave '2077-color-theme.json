@@ -1186,8 +1186,63 @@
 	  "charts.yellow": "#fffd91",
 	  "charts.orange": "#ff5100",
 	  "charts.green": "#00d482",
-	  "charts.purple": "#311b92"
+	  "charts.purple": "#311b92",
+
+	  //Testing colors (modern VSCode)
+	  "testing.iconFailed": "#ff0000",
+	  "testing.iconErrored": "#ff5100",
+	  "testing.iconPassed": "#00d482",
+	  "testing.runAction": "#00d4b1",
+	  "testing.iconQueued": "#fffd91",
+	  "testing.iconUnset": "#6766b3",
+	  "testing.iconSkipped": "#00a2ff",
+	  "testing.peekBorder": "#00d482",
+	  "testing.peekHeaderBackground": "#003622",
+	  "testing.message.error.decorationForeground": "#ff0000",
+	  "testing.message.error.lineBackground": "#4200ad3d",
+	  "testing.message.info.decorationForeground": "#00d4b1",
+
+	  //Inline chat and AI assistant (modern VSCode)
+	  "inlineChat.background": "#001420",
+	  "inlineChat.border": "#00d4b1",
+	  "inlineChat.shadow": "#00d482",
+	  "inlineChat.regionHighlight": "#6200ff4d",
+	  "inlineChatInput.border": "#00a2ff",
+	  "inlineChatInput.focusBorder": "#00d482",
+	  "inlineChatInput.placeholderForeground": "#0378bd",
+	  "inlineChatInput.background": "#001420",
+	  "inlineChatDiff.inserted": "#00d4823d",
+	  "inlineChatDiff.removed": "#ff00003d",
+
+	  //Command center (modern VSCode)
+	  "commandCenter.foreground": "#00d4b1",
+	  "commandCenter.activeForeground": "#00d482",
+	  "commandCenter.background": "#101116",
+	  "commandCenter.activeBackground": "#003622",
+	  "commandCenter.border": "#00d4b1",
+
+	  //Editor inlay hints (modern VSCode)
+	  "editorInlayHint.background": "#00362250",
+	  "editorInlayHint.foreground": "#00d4b1",
+	  "editorInlayHint.typeForeground": "#00a2ff",
+	  "editorInlayHint.typeBackground": "#00362250",
+	  "editorInlayHint.parameterForeground": "#00ff9c",
+	  "editorInlayHint.parameterBackground": "#00362250",
+
+	  //Sticky scroll (modern VSCode)
+	  "editorStickyScroll.background": "#101116",
+	  "editorStickyScrollHover.background": "#003622",
+
+	  //Merge editor (modern VSCode)
+	  "mergeEditor.change.background": "#6200ff4d",
+	  "mergeEditor.change.word.background": "#6200ff80",
+	  "mergeEditor.conflict.unhandledUnfocused.border": "#ff5680",
+	  "mergeEditor.conflict.unhandledFocused.border": "#ff0000",
+	  "mergeEditor.conflict.handledUnfocused.border": "#00d482",
+	  "mergeEditor.conflict.handledFocused.border": "#00ff9c",
+	  "mergeEditor.conflict.handled.minimapOverViewRuler": "#00d482",
+	  "mergeEditor.conflict.unhandled.minimapOverViewRuler": "#ff0000"
 	},
-	"name": "Cyberpunk 2077 rebuild"
+	"name": "Synthwave '2077"
   }
   

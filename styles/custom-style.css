@@ -1,3 +1,11 @@
+/*
+ * Synthwave '2077 - Neon Glow Effects
+ *
+ * NOTE: These styles modify Monaco Editor token classes (.mtk*)
+ * These class names are internal to VSCode and may change between versions
+ * If the glow effects stop working after a VSCode update, this may be why
+ */
+
 .mtk1 /* Variables */ {
   color: #00d4b1;
   text-shadow: 0 0 2px #100c0f, 0 0 3px #00d4b175, 0 0 5px #00d4b175,
@@ -58,26 +66,40 @@
   text-shadow: 0 0 1px #f501b8, 0 0 3px #f92aada1, 0 0 5px #f92aada1;
 }
 
-/* Active tab neon */
+/* Active tab neon gradient effect */
 .monaco-workbench
   .part.editor
   > .content
   .editor-group-container
   > .title
   .tabs-container
-  > .tab.sizing-fit.active {
+  > .tab.sizing-fit.active,
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title
+  .tabs-container
+  > .tab.active {
   background-image: linear-gradient(to bottom, #28f1fc25, #fc28a825);
   position: sticky;
 }
 
-/* Active tab stripe */
+/* Active tab stripe - neon underline effect */
 .monaco-workbench
   .part.editor
   > .content
   .editor-group-container
   > .title
   .tabs-container
-  > .tab.sizing-fit.active::after {
+  > .tab.sizing-fit.active::after,
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title
+  .tabs-container
+  > .tab.active::after {
   content: "";
   position: absolute;
   bottom: -1px;
