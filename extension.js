@@ -3,11 +3,13 @@ const fs = require("fs");
 const path = require("path");
 
 function activate(context) {
-  const styleFilePath = path.join(
-    context.extensionPath,
-    "styles",
-    "custom-style.css"
-  ).replace(/\\/g, '/');
+  const tokenGlowStyleFilePath = path
+    .join(context.extensionPath, "styles", "custom-style.css")
+    .replace(/\\/g, '/');
+
+  const uiNeonStyleFilePath = path
+    .join(context.extensionPath, "styles", "ui-neon.css")
+    .replace(/\\/g, '/');
 
   // Use vscode.env.appRoot for more reliable path resolution
   const appDir = path.dirname(vscode.env.appRoot);
@@ -57,17 +59,25 @@ function activate(context) {
         ""
       );
 
+      // Always include UI neon styles
+      const uiStyleContent = await fs.promises.readFile(uiNeonStyleFilePath, "utf-8");
+
+      let combinedStyleContent = uiStyleContent;
+
       if (enable) {
-        // If enabling, add our custom styles
-        const styleContent = await fs.promises.readFile(styleFilePath, "utf-8");
-        html = html.replace(
-          /<\/head>/,
-          `<!-- !! VSCODE-CUSTOM-CSS-START !! -->
-        <style>${styleContent}</style>
+        // Optionally include token glow styles when neon is enabled
+        const tokenGlowContent = await fs.promises.readFile(tokenGlowStyleFilePath, "utf-8");
+        combinedStyleContent = `${uiStyleContent}\n${tokenGlowContent}`;
+      }
+
+      // If enable is false, we still inject UI-only neon styles
+      html = html.replace(
+        /<\/head>/,
+        `<!-- !! VSCODE-CUSTOM-CSS-START !! -->
+        <style>${combinedStyleContent}</style>
         <!-- !! VSCODE-CUSTOM-CSS-END !! -->
         </head>`
-        );
-      }
+      );
 
       // Write the modified HTML back to the file
       await fs.promises.writeFile(htmlFile, html, "utf-8");

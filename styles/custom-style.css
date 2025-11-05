@@ -1,92 +1,61 @@
 .mtk1 /* Variables */ {
   color: #00d4b1;
-  text-shadow: 0 0 2px #100c0f, 0 0 3px #00d4b175, 0 0 5px #00d4b175,
-    0 0 8px #00d4b175;
+  text-shadow: 0 0 2px #100c0f, 0 0 3px #00d4b175, 0 0 4px #00d4b175,
+    0 0 6px #00d4b175;
 }
 .mtk3 /* Commentaries */ {
   color: #6d77b3;
-  text-shadow: 0 0 2px #4c5790, 0 0 3px #4c579080, 0 0 5px #4c579080;
+  text-shadow: 0 0 2px #4c5790, 0 0 3px #4c579080, 0 0 4px #4c579080;
 }
 .mtk4 {
   color: #00d4b1;
-  text-shadow: 0 0 4px #100c0f, 0 0 3px #00d4b175, 0 0 5px #00d4b175,
-    0 0 8px #00d4b175;
+  text-shadow: 0 0 4px #100c0f, 0 0 3px #00d4b175, 0 0 4px #00d4b175,
+    0 0 6px #00d4b175;
 }
 .mtk6 {
   color: #f92aad;
-  text-shadow: 0 0 2px #100c0f, 0 0 3px #dc078e33, 0 0 5px #fff3;
+  text-shadow: 0 0 2px #100c0f, 0 0 3px #dc078e33, 0 0 4px #fff3;
 }
 .mtk7 {
   color: #fff5f6;
-  text-shadow: 0 0 2px #000, 0 0 3px #fc1f2c75, 0 0 5px #fc1f2c75,
-    0 0 8px #fc1f2c75;
+  text-shadow: 0 0 2px #000, 0 0 3px #fc1f2c75, 0 0 4px #fc1f2c75,
+    0 0 6px #fc1f2c75;
 }
 .mtk8 {
   color: #f4eee4;
-  text-shadow: 0 0 4px #393a33, 0 0 3px #f39f0575, 0 0 5px #f39f0575;
+  text-shadow: 0 0 4px #393a33, 0 0 3px #f39f0575, 0 0 4px #f39f0575;
 }
 .mtk9 {
   color: #a0fffc;
-  text-shadow: 0 0 1px #007676, 0 0 3px #20fffe75, 0 0 5px #20fffe75,
-    0 0 8px #20fffe75;
+  text-shadow: 0 0 1px #007676, 0 0 3px #20fffe75, 0 0 4px #20fffe75,
+    0 0 6px #20fffe75;
 }
 .mtk10 {
   color: #fdfdfd;
-  text-shadow: 0 0 1px #001716, 0 0 3px #03edf975, 0 0 5px #03edf975,
-    0 0 8px #03edf975;
+  text-shadow: 0 0 1px #001716, 0 0 3px #03edf975, 0 0 4px #03edf975,
+    0 0 6px #03edf975;
 }
 .mtk11 /* Number */ {
   color: #fffd91;
-  text-shadow: 0 0 1px #b3a668, 0 0 3px #fffd9175, 0 0 5px #fffd9175,
-    0 0 8px #fffd9175;
+  text-shadow: 0 0 1px #b3a668, 0 0 3px #fffd9175, 0 0 4px #fffd9175,
+    0 0 6px #fffd9175;
 }
 .mtk12 /* Units */ {
   color: #ff5680;
-  text-shadow: 0 0 2px #b32d46, 0 0 3px #ff568075, 0 0 5px #ff568075,
-    0 0 8px #ff568075;
+  text-shadow: 0 0 2px #b32d46, 0 0 3px #ff568075, 0 0 4px #ff568075,
+    0 0 6px #ff568075;
 }
 .mtk13 {
   color: #ffcfecbb;
-  text-shadow: 0 0 2px #fc28a8, 0 0 3px #fc28a8a0, 0 0 5px #fc28a8a0;
+  text-shadow: 0 0 2px #fc28a8, 0 0 3px #fc28a8a0, 0 0 4px #fc28a8a0;
 }
 .mtk14 {
   color: #f4eee4;
-  text-shadow: 0 0 4px #393a33, 0 0 3px #f39f0575, 0 0 5px #f39f0575;
+  text-shadow: 0 0 4px #393a33, 0 0 3px #f39f0575, 0 0 4px #f39f0575;
 }
 .mtk16 /* Properties */ {
   color: #f92aad;
-  text-shadow: 0 0 1px #f501b8, 0 0 3px #f92aada1, 0 0 5px #f92aada1;
-}
-
-/* Active tab neon */
-.monaco-workbench
-  .part.editor
-  > .content
-  .editor-group-container
-  > .title
-  .tabs-container
-  > .tab.sizing-fit.active {
-  background-image: linear-gradient(to bottom, #28f1fc25, #fc28a825);
-  position: sticky;
-}
-
-/* Active tab stripe */
-.monaco-workbench
-  .part.editor
-  > .content
-  .editor-group-container
-  > .title
-  .tabs-container
-  > .tab.sizing-fit.active::after {
-  content: "";
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: linear-gradient(to right, #e62498ee, #00d4b1) !important;
-  opacity: 1;
-  z-index: 6;
+  text-shadow: 0 0 1px #f501b8, 0 0 3px #f92aada1, 0 0 4px #f92aada1;
 }
 
 /* update lightbulb to be neon */
