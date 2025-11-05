@@ -1,0 +1,129 @@
+/*
+ * Synthwave '2077 - Neon Glow Effects (LOW INTENSITY)
+ *
+ * NOTE: These styles modify Monaco Editor token classes (.mtk*)
+ * These class names are internal to VSCode and may change between versions
+ * If the glow effects stop working after a VSCode update, this may be why
+ */
+
+/* Variables */
+.mtk1 {
+  color: #00d4b1;
+  text-shadow: 0 0 2px #00d4b140, 0 0 3px #00d4b130;
+}
+
+/* Commentaries */
+.mtk3 {
+  color: #6d77b3;
+  text-shadow: 0 0 2px #4c579050;
+}
+
+.mtk4 {
+  color: #00d4b1;
+  text-shadow: 0 0 2px #00d4b140, 0 0 3px #00d4b130;
+}
+
+.mtk6 {
+  color: #f92aad;
+  text-shadow: 0 0 2px #dc078e30;
+}
+
+.mtk7 {
+  color: #fff5f6;
+  text-shadow: 0 0 2px #fc1f2c40, 0 0 3px #fc1f2c30;
+}
+
+.mtk8 {
+  color: #f4eee4;
+  text-shadow: 0 0 2px #f39f0540;
+}
+
+.mtk9 {
+  color: #a0fffc;
+  text-shadow: 0 0 2px #20fffe40, 0 0 3px #20fffe30;
+}
+
+.mtk10 {
+  color: #fdfdfd;
+  text-shadow: 0 0 2px #03edf940, 0 0 3px #03edf930;
+}
+
+/* Numbers */
+.mtk11 {
+  color: #fffd91;
+  text-shadow: 0 0 2px #fffd9140, 0 0 3px #fffd9130;
+}
+
+/* Units */
+.mtk12 {
+  color: #ff5680;
+  text-shadow: 0 0 2px #ff568040, 0 0 3px #ff568030;
+}
+
+.mtk13 {
+  color: #ffcfecbb;
+  text-shadow: 0 0 2px #fc28a850;
+}
+
+.mtk14 {
+  color: #f4eee4;
+  text-shadow: 0 0 2px #f39f0540;
+}
+
+/* Properties */
+.mtk16 {
+  color: #f92aad;
+  text-shadow: 0 0 2px #f92aad50;
+}
+
+/* Active tab neon gradient effect */
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title
+  .tabs-container
+  > .tab.sizing-fit.active,
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title
+  .tabs-container
+  > .tab.active {
+  background-image: linear-gradient(to bottom, #28f1fc15, #fc28a815);
+  position: sticky;
+}
+
+/* Active tab stripe - neon underline effect */
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title
+  .tabs-container
+  > .tab.sizing-fit.active::after,
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title
+  .tabs-container
+  > .tab.active::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(to right, #e62498aa, #00d4b1aa) !important;
+  opacity: 0.8;
+  z-index: 6;
+}
+
+/* Neon lightbulb */
+.codicon-lightbulb-autofix:before,
+.codicon-light-bulb:before,
+.codicon-lightbulb:before {
+  filter: drop-shadow(0 0 2px #00d4b150);
+}

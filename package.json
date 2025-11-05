@@ -1,8 +1,8 @@
 {
   "name": "synthwave--2077",
   "displayName": "Synthwave '2077",
-  "description": "When Cyberpunk 2077 meets Synthwave '84",
-  "version": "0.7.0",
+  "description": "When Cyberpunk 2077 meets Synthwave '84 - A neon-powered color theme",
+  "version": "0.8.0",
   "icon": "icon.png",
   "publisher": "CodeSacha",
   "license": "SEE LICENSE IN LICENSE.txt",
@@ -27,17 +27,23 @@
     "cyberpunk",
     "synthwave",
     "neon",
+    "glow",
     "cyberpunk 2077",
     "synthwave 84",
     "retro",
     "futuristic",
-    "color-theme"
+    "color-theme",
+    "neon theme"
   ],
   "galleryBanner": {
     "color": "#101116",
     "theme": "dark"
   },
+  "extensionDependencies": [],
   "main": "./extension.js",
+  "activationEvents": [
+    "onStartupFinished"
+  ],
   "contributes": {
     "themes": [
       {
@@ -48,14 +54,48 @@
     ],
     "commands": [
       {
-        "command": "synthwave--2077.enable",
-        "title": "Synthwave 2077: Enable Neon"
+        "command": "synthwave--2077.enableNeon",
+        "title": "Synthwave 2077: Enable Neon Effects"
       },
       {
-        "command": "synthwave--2077.disable",
-        "title": "Synthwave 2077: Disable Neon"
+        "command": "synthwave--2077.disableNeon",
+        "title": "Synthwave 2077: Disable Neon Effects"
+      },
+      {
+        "command": "synthwave--2077.checkStatus",
+        "title": "Synthwave 2077: Check Neon Status"
+      },
+      {
+        "command": "synthwave--2077.installDependency",
+        "title": "Synthwave 2077: Install Neon Effects (Custom CSS Loader)"
       }
-    ]
+    ],
+    "configuration": {
+      "title": "Synthwave '2077",
+      "properties": {
+        "synthwave2077.neonEffectsEnabled": {
+          "type": "boolean",
+          "default": false,
+          "description": "Enable neon glow effects (requires Custom CSS and JS Loader extension)"
+        },
+        "synthwave2077.autoEnableNeon": {
+          "type": "boolean",
+          "default": false,
+          "description": "Automatically enable neon effects when theme is activated"
+        },
+        "synthwave2077.suppressWarnings": {
+          "type": "boolean",
+          "default": false,
+          "description": "Suppress warnings about Custom CSS and JS Loader installation"
+        },
+        "synthwave2077.glowIntensity": {
+          "type": "string",
+          "enum": ["low", "medium", "high"],
+          "default": "medium",
+          "description": "Intensity of the neon glow effects"
+        }
+      }
+    }
   },
   "scripts": {
     "package": "vsce package",
