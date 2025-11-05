@@ -115,19 +115,26 @@ class NeonEffectsManager {
     // Check if Custom CSS Loader is installed
     if (!this.isCustomCSSInstalled()) {
       const choice = await vscode.window.showWarningMessage(
-        `${EXTENSION_NAME}: Neon effects require the "Custom CSS and JS Loader" extension.`,
-        "Install Extension",
-        "Learn More",
+        `${EXTENSION_NAME}: Neon effects require the "Custom CSS and JS Loader" extension.\n\nPublisher: be5invis`,
+        { modal: true },
+        "Open Extensions Panel",
+        "Open in Marketplace",
         "Cancel"
       );
 
-      if (choice === "Install Extension") {
+      if (choice === "Open Extensions Panel") {
         await this.installCustomCSSLoader();
-      } else if (choice === "Learn More") {
+        vscode.window.showInformationMessage(
+          "After installing the extension, come back and run 'Synthwave 2077: Enable Neon Effects' again."
+        );
+      } else if (choice === "Open in Marketplace") {
         vscode.env.openExternal(
           vscode.Uri.parse(
             "https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-custom-css"
           )
+        );
+        vscode.window.showInformationMessage(
+          "After installing, reload VS Code and run 'Synthwave 2077: Enable Neon Effects' again."
         );
       }
       return;
@@ -344,29 +351,41 @@ ${
    * Install Custom CSS and JS Loader extension
    */
   async installCustomCSSLoader() {
-    try {
-      await vscode.window.showInformationMessage(
-        "Opening Custom CSS and JS Loader in Extensions marketplace...",
-        "OK"
-      );
+    const extensionUrl = `https://marketplace.visualstudio.com/items?itemName=${CUSTOM_CSS_EXTENSION_ID}`;
 
-      await vscode.commands.executeCommand(
-        "workbench.extensions.installExtension",
-        CUSTOM_CSS_EXTENSION_ID
-      );
+    const choice = await vscode.window.showInformationMessage(
+      `${EXTENSION_NAME}: To enable neon effects, you need to install "Custom CSS and JS Loader".\n\nThis will open the Extensions panel where you can install it.`,
+      { modal: true },
+      "Open Extensions",
+      "Open in Browser",
+      "Cancel"
+    );
 
-      const choice = await vscode.window.showInformationMessage(
-        "Custom CSS and JS Loader installed! Reload to activate?",
-        "Reload Now",
-        "Later"
-      );
+    if (choice === "Open Extensions") {
+      try {
+        // Try to open the extension in the Extensions panel
+        await vscode.commands.executeCommand(
+          "workbench.extensions.search",
+          `@id:${CUSTOM_CSS_EXTENSION_ID}`
+        );
 
-      if (choice === "Reload Now") {
-        await vscode.commands.executeCommand("workbench.action.reloadWindow");
+        vscode.window.showInformationMessage(
+          'Search for "Custom CSS and JS Loader" in the Extensions panel and click Install.'
+        );
+      } catch (error) {
+        // Fallback: open extensions view with a general search
+        await vscode.commands.executeCommand(
+          "workbench.view.extensions"
+        );
+        vscode.window.showInformationMessage(
+          'Search for "Custom CSS and JS Loader" by be5invis and click Install.'
+        );
       }
-    } catch (error) {
-      vscode.window.showErrorMessage(
-        `Failed to install extension: ${error.message}`
+    } else if (choice === "Open in Browser") {
+      // Open in external browser
+      vscode.env.openExternal(vscode.Uri.parse(extensionUrl));
+      vscode.window.showInformationMessage(
+        "After installing from the browser, reload VS Code and try again."
       );
     }
   }
@@ -405,13 +424,13 @@ ${
     // Theme is active but Custom CSS not installed
     if (!customCSSInstalled) {
       const choice = await vscode.window.showInformationMessage(
-        `🌃 ${EXTENSION_NAME} is active! Want to enable neon glow effects?`,
-        "Yes, Install",
-        "No",
+        `🌃 ${EXTENSION_NAME} is active!\n\nWant to enable neon glow effects? This requires installing the "Custom CSS and JS Loader" extension (by be5invis).`,
+        "Install Now",
+        "Maybe Later",
         "Don't Ask Again"
       );
 
-      if (choice === "Yes, Install") {
+      if (choice === "Install Now") {
         await this.installCustomCSSLoader();
       } else if (choice === "Don't Ask Again") {
         await vscode.workspace
