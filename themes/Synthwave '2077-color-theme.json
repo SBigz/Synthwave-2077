@@ -1188,6 +1188,45 @@
 	  "charts.green": "#00d482",
 	  "charts.purple": "#311b92"
 	},
-	"name": "Cyberpunk 2077 rebuild"
+	"semanticHighlighting": true,
+	"semanticTokenColors": {
+	  "variable": "#62d4b7",
+	  "variable.readonly": "#00d4b1",
+	  "variable.defaultLibrary": "#00FF9C",
+	  "parameter": "#fffd91",
+	  "function": "#EEFFFF",
+	  "function.defaultLibrary": "#00d4b1",
+	  "method": "#EEFFFF",
+	  "class": "#00FF9C",
+	  "interface": "#00FF9C",
+	  "type": "#00FF9C",
+	  "namespace": "#00FF9C",
+	  "property": "#f92aad",
+	  "property.readonly": "#fd7fd9",
+	  "enum": "#00fffc",
+	  "enumMember": "#fffd91",
+	  "keyword": "#ffe0e0",
+	  "string": "#fd7fd9",
+	  "number": "#fffd91",
+	  "regexp": "#89DDFF",
+	  "operator": "#EEFFFF",
+	  "comment": {
+		"foreground": "#6766b3",
+		"fontStyle": "italic"
+	  },
+	  "macro": "#ee6dff",
+	  "label": "#ff5680",
+	  "*.deprecated": {
+		"foreground": "#6766b3",
+		"fontStyle": "strikethrough"
+	  },
+	  "*.modification": {
+		"foreground": "#c8ff00"
+	  },
+	  "*.async": {
+		"fontStyle": "italic"
+	  }
+	},
+	"name": "Synthwave '2077"
   }
   

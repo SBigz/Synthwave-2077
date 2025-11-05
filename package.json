@@ -1,27 +1,47 @@
 {
   "name": "synthwave--2077",
   "displayName": "Synthwave '2077",
-  "description": "When Cyberpunk 2077 meets Synthwave '84",
-  "icon": "./icon.png",
+  "description": "When Cyberpunk 2077 meets Synthwave '84 - A vibrant neon theme with glow effects",
+  "version": "0.7.0",
   "publisher": "CodeSacha",
+  "icon": "icon.png",
   "license": "SEE LICENSE IN LICENSE.txt",
   "homepage": "https://github.com/SBigz/Synthwave-2077/blob/main/README.md",
   "bugs": {
     "url": "https://github.com/SBigz/Synthwave-2077/issues",
     "email": "contact@codesacha.xyz"
   },
-  "version": "0.6.0",
-  "engines": {
-    "vscode": "^1.77.0"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/SBigz/Synthwave-2077"
   },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
   "categories": [
     "Themes"
   ],
+  "keywords": [
+    "theme",
+    "color-theme",
+    "dark theme",
+    "cyberpunk",
+    "synthwave",
+    "neon",
+    "glow",
+    "retro",
+    "80s",
+    "cyberpunk 2077",
+    "synthwave 84"
+  ],
+  "galleryBanner": {
+    "color": "#101116",
+    "theme": "dark"
+  },
   "main": "./extension.js",
+  "activationEvents": [
+    "onStartupFinished"
+  ],
   "contributes": {
     "themes": [
       {
@@ -41,7 +61,12 @@
       }
     ]
   },
+  "scripts": {
+    "package": "vsce package",
+    "publish": "vsce publish"
+  },
   "devDependencies": {
-    "vscode": "^1.1.37"
+    "@types/node": "^20.x",
+    "@types/vscode": "^1.85.0"
   }
 }

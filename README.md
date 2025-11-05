@@ -34,14 +34,58 @@ Get ready to dive into a futuristic, dystopian world with the "Synthwave '2077" 
 7. Each time you enable or disable the custom styles, VS Code will reload to apply the changes.
 8. To customize your terminal theme, install [oh my zsh!](https://github.com/ohmyzsh/ohmyzsh) and choose your desired theme !
 
+## Troubleshooting 🔧
+
+### Neon effect not working?
+
+**1. Check VS Code permissions:**
+   - **Windows**: Run VS Code as Administrator (Right-click → "Run as administrator")
+   - **macOS**: Grant permissions: `sudo chown -R $(whoami) "/Applications/Visual Studio Code.app/Contents/Resources/app"`
+   - **Linux**: Run with sudo or fix permissions: `sudo chown -R $(whoami) /usr/share/code`
+
+**2. VS Code shows "corrupted" warning:**
+   - This is **normal** - the extension modifies internal files
+   - Click "Don't Show Again" or install [Fix VSCode Checksums](https://marketplace.visualstudio.com/items?itemName=lehni.vscode-fix-checksums)
+
+**3. Neon still not visible:**
+   - Make sure you selected the theme: `File > Preferences > Color Theme > Synthwave '2077`
+   - Run the command again: `Ctrl+Shift+P` → "Synthwave 2077: Enable Neon"
+   - Fully restart VS Code (close all windows)
+
+**4. After VS Code update:**
+   - Re-run "Synthwave 2077: Enable Neon" after each VS Code update
+   - The neon effect is cleared when VS Code updates itself
+
+### Compatibility
+
+- ✅ **Tested**: VS Code 1.77 - 1.107+
+- ✅ **Supports**: Windows, macOS, Linux
+- ⚠️ **Note**: Custom CSS injection is not officially supported by VS Code
+
+### Known Limitations
+
+- Requires administrator/root privileges to modify VS Code internal files
+- VS Code may show "unsupported" warnings (this is expected)
+- The neon effect relies on internal VS Code structure that may change
+- Must re-enable neon after each VS Code update
+
 ## Disclaimer 👀
 
 Although I am not a theme developer, I fell in love with Cyberpunk 2077's style and the Synthwave '84 theme. I created Synthwave '2077 by merging the two according to my preferences. The theme is not perfect, but it improves with feedback, so don't hesitate to share your suggestions and improvements.
+
+**⚠️ Important**: This extension modifies VS Code's internal files to provide the neon glow effect. While this approach works, it's not officially supported by VS Code. Use at your own risk, though no permanent damage can occur (reinstalling VS Code will restore original files).
 
 ## Credits ✨
 
 - [Cyberpunk 2077](https://github.com/carlos18mz/Cyberpunk-2077-rebuild) VS Code Theme by [carlos18mz](https://github.com/carlos18mz)
 - ["Synthwave '84"](https://github.com/robb0wen/synthwave-vscode) VS Code Theme by [robbOwen](https://github.com/robb0wen)
+
+## Contributing 🤝
+
+Found a bug? Have a suggestion? Feel free to:
+- Open an [issue](https://github.com/SBigz/Synthwave-2077/issues)
+- Submit a pull request
+- Star the repository if you enjoy the theme!
 
 ## Enjoy !
 

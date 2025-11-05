@@ -1,0 +1,51 @@
+# VS Code Extension Ignore File
+# Files and directories to exclude from the extension package
+
+# Git files
+.git
+.gitignore
+.gitattributes
+
+# VS Code configuration
+.vscode/**
+.vscode-test/**
+
+# Node modules
+node_modules/**
+**/node_modules/**
+
+# Build and lock files
+package-lock.json
+*.vsix
+
+# Documentation and audit files
+AUDIT_REPORT.md
+*.md
+!README.md
+!CHANGELOG.md
+
+# Image source files (keep only compressed versions)
+.DS_Store
+
+# Test files
+test/**
+tests/**
+**/*.test.js
+**/*.spec.js
+
+# TypeScript source files (if any)
+src/**/*.ts
+tsconfig.json
+
+# Development files
+.eslintrc*
+.prettierrc*
+.editorconfig
+
+# CI/CD
+.github/**
+.travis.yml
+.gitlab-ci.yml
+
+# Logs
+*.log
