@@ -1,37 +1,47 @@
 {
-  "name": "synthwave--2077",
+  "name": "synthwave-2077",
   "displayName": "Synthwave '2077",
-  "description": "When Cyberpunk 2077 meets Synthwave '84",
-  "icon": "./icon.png",
+  "description": "When Cyberpunk 2077 meets Synthwave '84 - A neon-infused dark theme",
+  "version": "1.0.0",
   "publisher": "CodeSacha",
   "license": "SEE LICENSE IN LICENSE.txt",
-  "homepage": "https://github.com/SBigz/Synthwave-2077/blob/main/README.md",
-  "bugs": {
-    "url": "https://github.com/SBigz/Synthwave-2077/issues",
-    "email": "contact@codesacha.xyz"
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#101116",
+    "theme": "dark"
   },
-  "version": "0.6.0",
-  "engines": {
-    "vscode": "^1.77.0"
-  },
+  "homepage": "https://github.com/SBigz/Synthwave-2077",
   "repository": {
     "type": "git",
     "url": "https://github.com/SBigz/Synthwave-2077"
   },
+  "bugs": {
+    "url": "https://github.com/SBigz/Synthwave-2077/issues",
+    "email": "contact@codesacha.xyz"
+  },
+  "engines": {
+    "vscode": "^1.60.0"
+  },
   "categories": [
     "Themes"
   ],
-  "main": "./extension.js",
+  "keywords": [
+    "theme",
+    "dark",
+    "synthwave",
+    "cyberpunk",
+    "neon",
+    "retro",
+    "2077",
+    "color theme"
+  ],
   "contributes": {
     "themes": [
       {
         "label": "Synthwave '2077",
         "uiTheme": "vs-dark",
-        "path": "./themes/Synthwave '2077-color-theme.json"
+        "path": "./themes/synthwave-2077-color-theme.json"
       }
     ]
-  },
-  "devDependencies": {
-    "vscode": "^1.1.37"
   }
 }
