@@ -29,16 +29,6 @@
         "uiTheme": "vs-dark",
         "path": "./themes/Synthwave '2077-color-theme.json"
       }
-    ],
-    "commands": [
-      {
-        "command": "synthwave--2077.enable",
-        "title": "Synthwave 2077: Enable Neon"
-      },
-      {
-        "command": "synthwave--2077.disable",
-        "title": "Synthwave 2077: Disable Neon"
-      }
     ]
   },
   "devDependencies": {
