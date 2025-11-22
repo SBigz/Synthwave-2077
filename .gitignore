@@ -1,2 +1,17 @@
-.synthwave--2077-0.1.0.vsix
-.vscode
+# VSCode extension packages
+*.vsix
+
+# Node modules (not needed for pure themes)
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.vscode/
+.idea/
+
+# Build artifacts
+out/
+dist/
