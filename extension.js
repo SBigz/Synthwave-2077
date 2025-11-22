@@ -13,48 +13,51 @@ function activate(context) {
   const base = path.join(appDir, "vs", "code");
   const htmlFile = path.join(base, "electron-sandbox", "workbench", "workbench.html");
 
-  async function patchHtmlFile(enable) {
-    // Read the current content of the HTML file
-    let html = await fs.promises.readFile(htmlFile, "utf-8");
+  async function applyStyles() {
+    try {
+      let html = await fs.promises.readFile(htmlFile, "utf-8");
 
-    // Clear any existing custom styles
-    html = html.replace(
-      /<!-- !! VSCODE-CUSTOM-CSS-START !! -->[\s\S]*?<!-- !! VSCODE-CUSTOM-CSS-END !! -->/,
-      ""
-    );
+      // Check if styles are already applied
+      if (html.includes("<!-- !! SYNTHWAVE-2077-CSS-START !! -->")) {
+        return;
+      }
 
-    if (enable) {
-      // If enabling, add our custom styles
+      // Clear any old custom styles
+      html = html.replace(
+        /<!-- !! VSCODE-CUSTOM-CSS-START !! -->[\s\S]*?<!-- !! VSCODE-CUSTOM-CSS-END !! -->/,
+        ""
+      );
+
+      // Add our custom styles
       const styleContent = await fs.promises.readFile(styleFilePath, "utf-8");
       html = html.replace(
         /<\/head>/,
-        `<!-- !! VSCODE-CUSTOM-CSS-START !! -->
+        `<!-- !! SYNTHWAVE-2077-CSS-START !! -->
         <style>${styleContent}</style>
-        <!-- !! VSCODE-CUSTOM-CSS-END !! -->
+        <!-- !! SYNTHWAVE-2077-CSS-END !! -->
         </head>`
       );
+
+      await fs.promises.writeFile(htmlFile, html, "utf-8");
+
+      const action = await vscode.window.showInformationMessage(
+        "Synthwave 2077: Tab effects applied. Reload to see changes.",
+        "Reload"
+      );
+
+      if (action === "Reload") {
+        vscode.commands.executeCommand('workbench.action.reloadWindow');
+      }
+    } catch (error) {
+      // Silently fail if we can't modify the file (permissions, etc.)
     }
-
-    // Write the modified HTML back to the file
-    await fs.promises.writeFile(htmlFile, html, "utf-8");
-
-    // Reload VS Code window
-    vscode.commands.executeCommand('workbench.action.reloadWindow');
   }
 
-  context.subscriptions.push(
-    vscode.commands.registerCommand("synthwave--2077.disable", async () => {
-      await patchHtmlFile(false);
-      vscode.window.showInformationMessage("There's no spoon");
-    })
-  );
-
-  context.subscriptions.push(
-    vscode.commands.registerCommand("synthwave--2077.enable", async () => {
-      await patchHtmlFile(true);
-      vscode.window.showInformationMessage("Wake up Samurai, we have a city to burn");
-    })
-  );
+  // Apply styles on activation
+  applyStyles();
 }
 
+function deactivate() {}
+
 exports.activate = activate;
+exports.deactivate = deactivate;
